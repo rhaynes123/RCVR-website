@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My App Portfolio</title>
+    <title>RCVR App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <img src="images/logo.png" alt="App Logo" id="logo">
-        <h1>My Awesome App</h1>
-        <p>Revolutionizing the way you do something amazing.</p>
+        <p>Making rehab and recovery easy.</p>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#whats-new">What's New</a></li>
+                <!-- <li><a href="#whats-new">What's New</a></li> -->
                 <li><a href="#features">Features</a></li>
-                <li><a href="#screenshots">Screenshots</a></li>
+                <!-- <li><a href="#screenshots">Screenshots</a></li> -->
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -24,11 +23,11 @@
     
     <section id="about">
         <h2>About</h2>
-        <p>This app is designed to make your life easier by providing amazing features and functionalities.</p>
+        <p>This app is designed to make your life easier by helping people keep track of three main categories critical to rehabilitatin. Physical exercises, medications, and mental contemplations. It does so via very robust and details charts to view your data and simple reminders to let you choose what you need to be reminded of .</p>
     </section>
     
      <section id="gif-center">
-        <h2>Check out our App in Action!</h2>
+        <h2>Check it Out!</h2>
         <div class="gif-container">
             <img src="images/addMedicationDemo.gif" alt="App Demo GIF">
         </div>
@@ -44,16 +43,16 @@
     <section id="features">
         <h2>Features</h2>
         <div class="feature">
-            <h3>Feature 1</h3>
-            <p>Explanation of feature 1 and why it is cool.</p>
+            <h3>Exercises</h3>
+            <p>We help you track any physical activies suggested to you by either your doctor or other trained professional.</p>
         </div>
         <div class="feature">
-            <h3>Feature 2</h3>
-            <p>Explanation of feature 2 and why it is cool.</p>
+            <h3>Medications</h3>
+            <p>We help you never forget to take any prescriptioned medication or vitamins.</p>
         </div>
         <div class="feature">
-            <h3>Feature 3</h3>
-            <p>Explanation of feature 3 and why it is cool.</p>
+            <h3>Contemplations</h3>
+            <p>We try to remind you that a strong and healthy mind is also critical to a strong healthy body.</p>
         </div>
     </section>
 
@@ -71,6 +70,12 @@
     <section id="contact">
         <h2>Contact</h2>
         <form id="contact-form">
+            <div id="emailSent" hidden>
+                <strong>Email Sent!</strong>&#9989;
+            </div>
+            <div id="emailFailed" hidden>
+                <strong>Email Failed!</strong>&#10060;
+            </div>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -80,7 +85,7 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
 
-            <button type="submit">Send</button>
+            <button id="submitEmailBtn" type="submit">Send</button>
         </form>
     </section>
 
