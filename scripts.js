@@ -71,7 +71,10 @@ if(notificationButtonId){
             reply_to: htmlEncode(fromEmail),
             message: htmlEncode(message)
         }
-       
+       if(notification.name === "" || notification.from ===""){
+           console.log("Email couldn't be sent")
+           return
+       }
         postNotification(notification)
         
     });

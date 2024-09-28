@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCVR App</title>
     <link rel="stylesheet" href="styles.css">
+    
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "oqIE5jpQSfdOIchJ9",
+            });
+        })();
+    </script>
+        
+<!------ Include the above in your HEAD tag ---------->
 </head>
 <body>
     <header>
@@ -23,7 +35,7 @@
     
     <section id="about">
         <h2>About</h2>
-        <p>This app is designed to make your life easier by helping people keep track of three main categories critical to rehabilitatin. Physical exercises, medications, and mental contemplations. It does so via very robust and details charts to view your data and simple reminders to let you choose what you need to be reminded of .</p>
+        <p>This app is designed to make your life easier by helping people keep track of three main categories critical to rehabilitation. Physical exercises, medications, and mental contemplations. It does so via very robust and details charts to view your data and simple reminders to let you choose what you need to be reminded of .</p>
     </section>
     
      <section id="gif-center">
@@ -85,14 +97,14 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
 
-            <button id="submitEmailBtn" type="submit">Send</button>
+            <button id="submitEmailBtn" type="submit" disabled>Send</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 My App. All rights reserved.</p>
+        <p>&copy; 2024 RCVR app. All rights reserved.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="scripts.js" defer></script>
 </body>
 </html>
